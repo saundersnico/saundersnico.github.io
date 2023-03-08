@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="js.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li onclick="cleanR()"><a href="#">Inicio</a></li>
+                <li><a href="#" onclick="showSubMenu()">Cursos realizados</a></li>
+            </ul>
+            <ul class="sub-menu">
+                <li onclick="showCert(Array('IDW1', 'IDW2'))">Introduccion al desarrollo web </li>
+                <li onclick="showCert(Array('PWL', 'PWM', 'PWW'))">Prework</li>
+                <li onclick="showCert(Array('PL', 'PLE', 'PLL'))">Pensamiento logico</li>
+                <li onclick="showCert(Array('TLC'))">Linux Terminal</li>
+                <li onclick="showCert(Array('HTMLCSS'))">HTML|CSS</li>
+                <li onclick="showCert(Array('JSB', 'JSP'))">JavaScript</li>
+                <li onclick="showCert(Array('FED', 'FEDP'))">FrontEnd developer</li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <section class="profile-data">
+        <picture id="profile-img">
+            <img src="./img/yo.jpg" alt="Mi foto de perfil" title="Nicolas Saunders">
+        </picture>
+        <p>Hola, bienvenido a mi perfil personal. Mi nombre es Nicolás y estoy enfocado en el desarrollo Full-Stack</p>
+    </section>
+    <section class="data-text">
+        <p>Tengo la experiencia de al menos 10 años en el campo de la programación como free lance. Con conocimientos sobre HTML, CSS, JavaScript, PHP y SQL</p>
+        <p>Actualmente me encuentro perfeccionando mis habilidades realizando nuevos cursos</p>
+        <p>Tambien me encuentro en el aprendizaje de la correcta utilización de GIT en GitHub</p>
+    </section>
+    <section class="response">
+
+    </section>
+</main>
+<footer>
+
+</footer>
+</body>
+</html>
