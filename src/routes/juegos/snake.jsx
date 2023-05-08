@@ -140,6 +140,14 @@ const Snake = ()=>{
         if(snake.direction === 1 && e.key === 'ArrowRight' && snake.body.length>1) return;
         if(snake.direction === 2 && e.key === 'ArrowUp' && snake.body.length>1) return;
         if(snake.direction === 3 && e.key === 'ArrowDown' && snake.body.length>1) return;
+        if(snake.direction === 2 && e.key === 'w' && snake.body.length>1) return;
+        if(snake.direction === 2 && e.key === 'W' && snake.body.length>1) return;
+        if(snake.direction === 0 && e.key === 'a' && snake.body.length>1) return;
+        if(snake.direction === 0 && e.key === 'A' && snake.body.length>1) return;
+        if(snake.direction === 3 && e.key === 's' && snake.body.length>1) return;
+        if(snake.direction === 3 && e.key === 'S' && snake.body.length>1) return;
+        if(snake.direction === 1 && e.key === 'd' && snake.body.length>1) return;
+        if(snake.direction === 1 && e.key === 'D' && snake.body.length>1) return;
         //console.log(key);
         switch (key){
             case 'ArrowLeft':
