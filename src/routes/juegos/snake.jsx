@@ -114,7 +114,9 @@ const Snake = ()=>{
         button.remove();
         newMeatPos();
     };
-
+    const pause = ()=>{
+        snake.moving = !snake.moving;
+    }
     const drawStart = (p5)=>{
         if(showStart){
             showStart = false;
@@ -127,6 +129,10 @@ const Snake = ()=>{
             startGameButton.mousePressed(()=>{startGame(startGameButton, p5)});
         }
     }
+    
+    const isTouch = (e)=>{
+        //console.log('x: '+e.pmouseX+' | y: '+e.pmouseY);
+    }
 
     const keyPressed = (e)=>{
         const key = e.key;
@@ -134,19 +140,30 @@ const Snake = ()=>{
         if(snake.direction === 1 && e.key === 'ArrowRight' && snake.body.length>1) return;
         if(snake.direction === 2 && e.key === 'ArrowUp' && snake.body.length>1) return;
         if(snake.direction === 3 && e.key === 'ArrowDown' && snake.body.length>1) return;
+        //console.log(key);
         switch (key){
             case 'ArrowLeft':
+            case 'a':
+            case 'A':
                 snake.direction = 1;
                 break;
             case 'ArrowRight':
+            case 'd':
+            case 'D':
                 snake.direction = 0;
                 break;
             case 'ArrowUp':
+            case 'w':
+            case 'W':
                 snake.direction = 3;
                 break;
             case 'ArrowDown':
+            case 's':
+            case 'S':
                 snake.direction = 2;
                 break;
+            case ' ':
+                pause();
             default:
                 break;
         }
@@ -195,7 +212,7 @@ const Snake = ()=>{
         <>
         <Navigation/>
         <p className="snake-score">score: <span></span></p>
-        <Sketch setup={setup} draw={draw} keyPressed={keyPressed} className="canvas-game" />
+        <Sketch setup={setup} draw={draw} touchStarted={isTouch} keyPressed={keyPressed} className="canvas-game" />
         </>
     )
 }
