@@ -1,0 +1,16 @@
+.cert-container{
+    width: 90vw;
+    margin: 5vh auto;
+    background-color: #607D8B;
+    border-radius: 3%;
+}
+.cert-container img{
+    width:15vw;
+    margin: 3%;
+    background-color: white;
+    border-radius: 5%;
+    border: solid 0.5vw rgb(255 177 0 / 75%);
+}
+.cert-container img:hover{
+    transform: scale(3);
+}
