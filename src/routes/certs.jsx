@@ -31,6 +31,13 @@ const Certs = ()=>{
         <img src="img/certs/1.jpg" title="Curso Fundamento de Base de Datos" alt="Fundamento de Base de Datos"></img>
         <img src="img/certs/3.jpg" title="Programa de formacion Full Stack Developer con JavaScript" alt="Full Stack Developer con JavaScript"></img>
         <img src="img/certs/4.jpg" title="Curso Conseguir Trabajo como FrontEnd Developer" alt="Conseguir Trabajo como FrontEnd Developer"></img>
+        <img src="img/certs/27.jpg" title="Curso Basico de PHP: instalacion, fundamentos y operadores" alt="PHP: instalacion fundamentos y operadores"></img>
+        <img src="img/certs/28.jpg" title="Curso Basico de PHP: Arreglos, Funciones y Estructuras de control" alt="PHP: Arreglos, Funciones y Estructuras de control"></img>
+        <img src="img/certs/29.jpg" title="Curso de Integracion de PHP con HTML" alt="Integracion de PHP con HTML"></img>
+        <img src="img/certs/30.jpg" title="Curso Practico de PHP" alt="Curso Practico de PHP"></img>
+        <img src="img/certs/31.jpg" title="Curso de Programacion Orientada a Objetos" alt="Programacion Orientada a Objetos"></img>
+        <img src="img/certs/32.jpg" title="Curso de Introduccion a C#" alt="Introduccion a C#"></img>
+        <img src="img/certs/33.jpg" title="Curso Basicod de C#: Fundamentos, Variables y Operadores" alt="C#: Fundamentos, Variables y Operadores"></img>
         </div>
         </>
     );
