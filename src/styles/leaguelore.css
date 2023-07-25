@@ -1,0 +1,37 @@
+
+.container{
+    margin:2vh auto;
+    width: 80vw;
+}
+.champ-box{
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    margin: 1vh 1vw 1vh 1vw;
+}
+.champ-box img{
+    height: 16vh;
+    width: 18vw;
+    min-width: 128px;
+    max-width: 256px;
+    min-height: 128px;
+    max-height: 256px;
+}
+.champ-box span{
+    position: relative;
+    justify-content: center;
+    display: flex;
+}
+.champ-menu{
+    width: 90vw;
+    height: 70vh;
+    background-color: black;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 1;
+    display: none;
+    color: white;
+}
+.champ-menu div img{
+    width:25vw;
+}

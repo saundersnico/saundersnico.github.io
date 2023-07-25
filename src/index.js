@@ -10,6 +10,7 @@ import Profile from './routes/profile';
 import Certs from './routes/certs';
 import Juegos from './routes/juegos';
 import Snake from './routes/juegos/snake';
+import Lore from './routes/loreoflegends';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,11 @@ const router = createBrowserRouter([
   {
     path: "/juegos/snake",
     element: <Snake/>,
+    errorElement:<h1>Error</h1>
+  },
+  {
+    path: "/LoreofLegends",
+    element: <Lore/>,
     errorElement:<h1>Error</h1>
   }
 ])

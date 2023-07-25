@@ -8,6 +8,7 @@ const Navigation = ()=>{
                     <li><Link to="/">Inicio</Link></li>
                     <li><Link to="/certs">Certificados</Link></li>
                     <li><Link to="/juegos">Juegos</Link></li>
+                    <li><Link to="/loreoflegends">LeagueOfLegends-Lore</Link></li>
                 </ul>                
             </nav>
             </>
